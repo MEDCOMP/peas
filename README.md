@@ -85,6 +85,13 @@ NOTE: Don't forget to expose the server port in the dockerfile, else minikube wo
 
 ### Deployment of pea
 
+#### Build docker image
+
+```Shell
+cd peas/normalization/
+docker build -t normalization-pea:v1 .
+```
+
 The pea deployment stage has 2 steps: *Creating a deployment* and *Exposing the deployment as a service*, they are done as follows:
 
 ```Shell
