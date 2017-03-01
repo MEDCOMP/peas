@@ -33,6 +33,11 @@ $ sudo apt-get -y install docker-engine
 #### Installing Minikube
 Minikube installation requires VirtualBox which can be downloaded and installed from http://download.virtualbox.org/virtualbox/5.1.14/virtualbox-5.1_5.1.14-112924~Ubuntu~trusty_amd64.deb
 
+Install Kubectl
+
+```Shell
+curl -Lo kubectl https://storage.googleapis.com/kubernetes-release/release/v1.5.2/bin/linux/amd64/kubectl && chmod +x kubectl && sudo mv kubectl /usr/local/bin/
+```
 Next, we can go ahead and install Minikube
 
 ```Shell
