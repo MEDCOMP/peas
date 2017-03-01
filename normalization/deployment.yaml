@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: pea-deployment
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: pea-normalization-dep
+    spec:
+      containers:
+      - name: peas
+        image: normalization-pea:v1
+        ports:
+        - containerPort: 5000
